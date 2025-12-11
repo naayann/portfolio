@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+body {
+  background: #0e1015;
+  display: flex;
+  justify-content: center;
+}
