@@ -1,7 +1,21 @@
 @import "tailwindcss";
 
-body {
+html, body {
   background: #0e1015;
   display: flex;
   justify-content: center;
+  font-family: "Poppins";
+}
+
+  @keyframes loading {
+    0% {
+      width: 0;;
+    }
+    100% {
+      width: 200px;
+    }
+  }
+
+  .animate-loading-bar {
+  animation: loading 2s ease-out infinite;
 }
