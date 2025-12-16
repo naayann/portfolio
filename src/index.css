@@ -7,6 +7,7 @@
   --color-secondary-text: rgb(65, 65, 65);
   --color-background: #ffffff;
   --color-blur: rgb(120, 120, 120);
+  --color-accent: oklch(62.3% 0.214 259.815);
 }
 
 .dark {
@@ -14,6 +15,7 @@
   --color-secondary-text: rgb(222, 222, 222);
   --color-background: #0e1015;
   --color-blur: white;
+  --color-accent: oklch(79.5% 0.184 86.047);
 }
 
 @keyframes loading {

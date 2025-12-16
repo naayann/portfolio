@@ -9,8 +9,8 @@ const Skills = () => {
         return (
           <div
             key={skill}
-            className='bg-blur/5 border border-text rounded-full px-5 py-2 whitespace-nowrap'>
-            <p className='text-text'>{skill}</p>
+            className='bg-blur/5 border border-accent rounded-full px-5 py-2 whitespace-nowrap'>
+            <p className='text-accent'>{skill}</p>
           </div>
         )
       })}
