@@ -1,9 +1,10 @@
 import './App.css'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import LoadingScreen from './components/LoadingScreen'
-import Projects from './components/Projects'
 import { useEffect, useState } from 'react'
+import LoadingScreen from './components/LoadingScreen'
+import HomeFeed from './components/HomeFeed'
+import Projects from './components/Projects'
+import Experience from './components/Experience'
+import Contact from './components/Contact'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -19,9 +20,12 @@ function App() {
       {isLoading ?
         <LoadingScreen /> :
         <>
-          <Navbar />
-          <Home />
+        <div className='flex'>
+          <HomeFeed />
           <Projects />
+          <Experience />
+          <Contact />
+        </div>
         </>}
     </>
   )
