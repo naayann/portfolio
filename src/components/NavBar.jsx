@@ -3,7 +3,7 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <nav className=' w-200 mx-auto flex items-center justify-between py-5'>
+    <nav className='w-200 mx-auto flex items-center justify-between py-5'>
       <div className='flex gap-3'>
         <a 
           href="#home"

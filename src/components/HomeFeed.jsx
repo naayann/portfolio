@@ -29,7 +29,7 @@ const HomeFeed = () => {
       <div className='flex items-center gap-3 justify-between'>
         <div>
           <div className='absolute top-36 left-105'>
-            <img src="/profile.jpg" alt="Nayan Sarania" className='w-40 h-40 rounded-full ring-5 ring-white' />
+            <img src="/profile.jpg" alt="Nayan Sarania" className='w-40 h-40 rounded-full ring-5 ring-[#fdfdfd]' />
           </div>
           <div className='mt-22'>
             <h1 className='font-bold text-4xl'>Nayan Sarania</h1>
