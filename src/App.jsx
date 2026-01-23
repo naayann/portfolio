@@ -20,16 +20,19 @@ function App() {
       {isLoading ?
         <LoadingScreen /> :
         <>
-        <div>
-          <NavBar />
-        </div>
-        <div className='flex'>
-          <HomeFeed />
-          <Projects />
-          <Experience />
-          <Contact />
-        </div>
-        </>}
+          <div className="container w-200 mx-auto">
+            <div>
+              <NavBar />
+            </div>
+            <div className='flex flex-col'>
+              <HomeFeed />
+              <Projects />
+              <Experience />
+              <Contact />
+            </div>
+          </div>
+        </>
+      }
     </>
   )
 }

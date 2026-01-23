@@ -3,29 +3,29 @@ import { Download, Github, Twitter } from 'lucide-react'
 
 const HomeFeed = () => {
   return (
-    <div className="container w-200 mx-auto">
+    <>
+      {/* Header */}
       <div className='relative bg-black h-40 w-full'>
+        {/* Dots */}
+        <div className='absolute inset-0 overflow-hidden pointer-events-none'>
+          {[...Array(50)].map((_, i) => (
+            <div
+              key={i}
+              className='absolute w-1.5 h-1.5 rounded-full opacity-60'
+              style={{
+                backgroundColor: "white",
+                /* eslint-disable */
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
+                animationDelay: `${Math.random() * 5}s`
+              }}
+            />
+          ))}
+        </div>
 
-        {/* Purple Dots */}
-      <div className='absolute inset-0 overflow-hidden pointer-events-none'>
-        {[...Array(50)].map((_, i) => (
-          <div
-            key={i}
-            className='absolute w-1.5 h-1.5 rounded-full opacity-60'
-            style={{
-              backgroundColor: "white",
-              /* eslint-disable */
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animation: `slow-drift ${15 + Math.random() * 20}s ease-in-out infinite`,
-              animationDelay: `${Math.random() * 5}s`
-            }}
-          />
-        ))}
       </div>
-
-      </div>
-      {/* Header Content */}
+      {/* Main Content */}
       <div className='flex items-center gap-3 justify-between'>
         <div>
           <div className='absolute top-36 left-105'>
@@ -69,7 +69,7 @@ const HomeFeed = () => {
         opportunities.
       </p>
 
-    </div>
+    </>
   )
 }
 
