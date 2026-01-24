@@ -3,35 +3,29 @@ import React from 'react'
 
 const NavBar = () => {
   return (
-    <nav className='w-200 mx-auto flex items-center justify-between py-5'>
-      <div className='flex gap-3'>
+    <nav className='flex items-center justify-between py-5'>
+      <div className='flex gap-4'>
         <a 
           href="#home"
-          className='text-secondary-text hover:text-text transition-colors duration-300'
+          className='text-white/70 hover:text-white transition-colors duration-300'
         >
           Home
         </a>
         <a 
           href="#projects"
-          className='text-secondary-text hover:text-text transition-colors duration-300'
+          className='text-white/70 hover:text-white transition-colors duration-300'
         >
           Projects
         </a>
         <a 
-          href="#experience"
-          className='text-secondary-text hover:text-text transition-colors duration-300'
-        >
-          Experience
-        </a>
-        <a 
           href="#contact"
-          className='text-secondary-text hover:text-text transition-colors duration-300'
+          className='text-white/70 hover:text-white transition-colors duration-300'
         >
           Contact
         </a>
       </div>
       <div>
-        <MoonIcon className='w-4 fill-black'/>
+        <p className='text-white/70 hover:text-white transition-colors duration-300'>Dark</p>
       </div>
     </nav>
   )
