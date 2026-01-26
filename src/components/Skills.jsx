@@ -1,6 +1,6 @@
 import React from 'react'
 
-const techStack = ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwindcss', 'Supabase', 'Figma', 'Git', 'Github', 'NPM', 'Vite', 'Vercel']
+const techStack = [ 'JavaScript', 'React', 'Tailwindcss', 'Supabase', 'Figma', 'Git', 'Github', 'NPM', 'Vite', 'Vercel', 'Notion']
 
 const Skills = () => {
   return <>
