@@ -1,4 +1,3 @@
-import React from 'react'
 import { Download, Send } from 'lucide-react'
 
 const HomeFeed = () => {
@@ -21,16 +20,15 @@ const HomeFeed = () => {
             />
           ))}
         </div>
-
       </div>
 
       {/* Profile */}
       <div className="-mt-10">
-        <div className="flex items-end gap-4 elative group">
+        <div className="flex items-end gap-4">
           <img
             src="/profile.jpg"
             alt="Nayan Sarania"
-            className="w-28 h-28 rounded-2xl ring-1 ring-white/20 hover:ring-white/40 transition-all duration-200 p-1 z-50 bg-white/5"
+            className="w-28 h-28 rounded-2xl ring-1 ring-white/20 hover:ring-white/50 transition-all duration-200 p-1 z-50 bg-white/5"
           />
 
           <div className="relative group">
@@ -66,13 +64,13 @@ const HomeFeed = () => {
 
         {/* CTAs */}
         <div className="flex gap-3 mt-6">
-          <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black font-medium hover:bg-white/90 transition-colors duration-200">
+          <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black font-medium hover:bg-white/90 transition-colors duration-200 text-sm md:text-md cursor-not-allowed">
             <Download className="w-4 h-4 download-anim" />
             Download CV
           </button>
 
           <a href="https://mail.google.com/mail/?view=cm&to=nayan.sarania.work@gmail.com" target="_blank">
-            <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-white/20 text-white hover:bg-white/5 transition">
+            <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-white/20 text-white hover:bg-white/5 transition text-sm md:text-md cursor-pointer">
               <Send className="w-4 h-4 send-anim" />
               Send Mail
             </button>

@@ -43,7 +43,7 @@ const Experience = () => {
         {/* Accordion Content */}
         <div
           className={`
-            overflow-hidden transition-all duration-500 ease-in
+            overflow-hidden transition-all duration-600 ease
             ${open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}
           `}
         >
@@ -56,10 +56,10 @@ const Experience = () => {
                 • Built a responsive website to maintain the village’s digital presence, ensuring accessibility across devices.
               </li>
               <li>
-                • Collaborated with stakeholders to gather requirements and translate them into clean UI components.
+                • Collaborated with professors to gather requirements and translate them into clean UI components.
               </li>
               <li>
-                • Focused on performance, usability, and maintainable frontend structure using modern React practices.
+                • Focused on performance, usability, and maintainable frontend structure following best practices.
               </li>
             </ul>
           </div>

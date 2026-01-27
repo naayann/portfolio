@@ -30,7 +30,7 @@ const SocialHandles = () => {
         <a href="https://github.com/naayann" target="_blank">
           <div className="group flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 p-4 hover:bg-white/8 transition">
             <div className='flex items-center gap-4'>
-              <div className='bg-black/40 p-3 rounded-md'>
+              <div className='bg-white/10 p-3 rounded-md'>
                 <SiGithub className="text-xl text-white" />
               </div>
               <div>

@@ -85,7 +85,7 @@ const Projects = () => {
               <a
                 href={project.demo}
                 target="_blank"
-                className="flex items-center gap-1 text-white/60 group-hover:text-white duration-200 hover:underline"
+                className="flex items-center gap-1 text-white/60 group-hover:text-white duration-200 hover:underline cursor-not-allowed"
               >
                 View Project
                 <ArrowUpRight className="w-4 h-4 send-anim" />
