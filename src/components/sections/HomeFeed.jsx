@@ -1,4 +1,5 @@
 import { Download, Send } from 'lucide-react'
+import profile from "/profile.jpg"
 
 const HomeFeed = () => {
   return (
@@ -26,7 +27,7 @@ const HomeFeed = () => {
       <div className="-mt-10">
         <div className="flex items-end gap-4">
           <img
-            src="/profile.jpg"
+            src={profile}
             alt="Nayan Sarania"
             className="w-28 h-28 rounded-2xl ring-1 ring-white/20 hover:ring-white/50 transition-all duration-200 p-1 z-50 bg-white/5"
           />
