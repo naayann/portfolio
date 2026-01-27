@@ -4,21 +4,23 @@ import { ArrowUpRight } from 'lucide-react'
 const projects = [
   {
     img: "/comingsoon.jpg",
-    title: "Coming Soon",
-    desc: "A React-based project currently under development. Launching soon.",
-    stack: ["React", "TypeScript", "TanStack Query"],
+    title: "Weathy",
+    desc: "An API-based weather app project, built to monitor weather status.",
+    stack: ["React", "TypeScript", "TankStack Query"],
     demo: "https://example.com",
     github: "https://github.com/naayann",
-    status: "Building"
+    status: "Building",
+    statusColor: "green",
   },
   {
     img: "/comingsoon.jpg",
     title: "Coming Soon",
-    desc: "A React-based project currently under development. Launching soon.",
-    stack: ["React", "TypeScript", "TanStack Query"],
+    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    stack: ["HTML", "CSS", "JavaScript"],
     demo: "https://example.com",
     github: "https://github.com/naayann",
-    status: "Building"
+    status: "Planning",
+    statusColor: "red",
   },
 ]
 
@@ -51,7 +53,12 @@ const Projects = () => {
               </h2>
 
               <span className="flex items-center gap-2 text-xs text-white/60">
-                <span className="w-2 h-2 rounded-full bg-green-400" />
+                <span
+                  className={`w-2 h-2 rounded-full ${project.statusColor === 'green'
+                      ? 'bg-green-400'
+                      : 'bg-red-400'
+                    }`}
+                />
                 {project.status}
               </span>
             </div>
@@ -78,18 +85,10 @@ const Projects = () => {
               <a
                 href={project.demo}
                 target="_blank"
-                className="flex items-center gap-1 text-white hover:underline"
+                className="flex items-center gap-1 text-white/60 group-hover:text-white duration-200 hover:underline"
               >
-                Live Demo
-                <ArrowUpRight className="w-4 h-4" />
-              </a>
-
-              <a
-                href={project.github}
-                target="_blank"
-                className="text-white/60 hover:text-white transition"
-              >
-                GitHub
+                View Project
+                <ArrowUpRight className="w-4 h-4 send-anim" />
               </a>
             </div>
           </div>

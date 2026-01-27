@@ -10,7 +10,7 @@ const Experience = () => {
         Experience
       </h1>
 
-      <div className="rounded-2xl border border-white/10 bg-white/5">
+      <div className="rounded-2xl border border-white/10 bg-white/5 hover:bg-white/8 transition">
         {/* Header */}
         <button
           onClick={() => setOpen(!open)}
