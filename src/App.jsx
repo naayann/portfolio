@@ -7,6 +7,7 @@ import Experience from './components/sections/Experience'
 import Projects from './components/sections/Projects'
 import Skills from './components/sections/Skills'
 import SocialHandles from './components/sections/SocialHandles'
+import Collections from './components/sections/Collections'
 import Footer from './components/sections/Footer'
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
       {isLoading ?
         <LoadingScreen /> :
         <>
-          <div className="container w-200 mx-auto border-l border-r border-white/50 border-dashed p-4">
+          <div className="container w-125 md:w-200 mx-auto md:border-l md:border-r border-white/50 border-dashed p-4">
             <div className='flex flex-col'>
               <SmoothFollower />
               <DevToast />
@@ -33,6 +34,7 @@ function App() {
               <Projects />
               <Skills />
               <SocialHandles />
+              <Collections />
               <Footer />
             </div>
           </div>
