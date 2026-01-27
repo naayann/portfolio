@@ -20,24 +20,6 @@ const projects = [
     github: "https://github.com/naayann",
     status: "Building"
   },
-  {
-    img: "/comingsoon.jpg",
-    title: "Coming Soon",
-    desc: "A React-based project currently under development. Launching soon.",
-    stack: ["React", "TypeScript", "TanStack Query"],
-    demo: "https://example.com",
-    github: "https://github.com/naayann",
-    status: "Building"
-  },
-  {
-    img: "/comingsoon.jpg",
-    title: "Coming Soon",
-    desc: "A React-based project currently under development. Launching soon.",
-    stack: ["React", "TypeScript", "TanStack Query"],
-    demo: "https://example.com",
-    github: "https://github.com/naayann",
-    status: "Building"
-  },
 ]
 
 const Projects = () => {

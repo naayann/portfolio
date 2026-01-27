@@ -1,8 +1,13 @@
-const LoadingScreen = () => {
+import React from 'react'
 
+const LoadingScreen = () => {
   return (
-    <div className='w-full h-full inset-0 bg-black fixed flex flex-col justify-center items-center z-1000'>
-      <img src="/logo.jpg" className='w-22 rounded-full' />
+    <div className="w-full h-full inset-0 bg-black fixed flex justify-center items-center z-50">
+      <img
+        src="/logo.jpg"
+        alt="Logo"
+        className="w-24 h-24 rounded-full animate-pulse"
+      />
     </div>
   )
 }
