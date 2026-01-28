@@ -28,15 +28,15 @@ const HomeFeed = () => {
           <img
             src={profile}
             alt="Nayan Sarania"
-            className="w-28 h-28 rounded-2xl ring-1 ring-border/20 hover:ring-white/50 transition-all duration-200 p-1 z-50 bg-foreground/5 animate-fade-in animation-delay-100"
+            className="w-22 h-22 md:w-28 md:h-28 rounded-2xl ring-1 ring-border/20 hover:ring-white/50 transition-all duration-200 p-1 z-50 bg-foreground/5 animate-fade-in animation-delay-100"
           />
 
           <div>
-            <h1 className="text-3xl font-bold text-text cursor-default animate-fade-in animation-delay-200">
+            <h1 className="text-xl md:text-3xl font-bold text-text cursor-default animate-fade-in animation-delay-200">
               Nayan Sarania
             </h1>
 
-            <p className="text-sm text-text/60 mt-1 animate-fade-in animation-delay-300">
+            <p className="text-[10px] md:text-sm text-text/60 mt-1 animate-fade-in animation-delay-300">
               Frontend Developer • React Enthusiast
             </p>
           </div>
@@ -45,11 +45,11 @@ const HomeFeed = () => {
 
       {/* About */}
       <div className="mt-8 max-w-xl">
-        <h2 className="text-lg font-semibold text-text animate-fade-in animation-delay-400">
+        <h2 className="text-md md:text-lg font-semibold text-text animate-fade-in animation-delay-400">
           About
         </h2>
 
-        <p className="mt-3 text-text/70 leading-relaxed animate-fade-in animation-delay-400">
+        <p className="text-xs md:text-[16px] mt-3 text-text/70 leading-relaxed animate-fade-in animation-delay-400">
           I’m a frontend developer based in India, focused on building
           performance oriented React applications with clean UI and solid UX. <br />
           Currently open to new opportunities.
@@ -58,17 +58,17 @@ const HomeFeed = () => {
         {/* CTAs */}
         <div className="flex gap-3 mt-6">
           <button 
-            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-foreground text-text-invert font-medium hover:bg-foreground/90 transition-colors duration-200 text-sm md:text-md cursor-not-allowed animate-fade-in animation-delay-500"
+            className="flex items-center gap-2 px-4 md:px-5 py-2.5 rounded-xl bg-foreground text-text-invert font-medium hover:bg-foreground/85 transition-colors duration-200 text-xs md:text-[14px] cursor-not-allowed animate-fade-in animation-delay-500"
           >
-            <Download className="w-4 h-4 download-anim" />
+            <Download className="w-3 h-3 md:w-4 md:h-4 download-anim" />
             Download CV
           </button>
 
           <a href="https://mail.google.com/mail/?view=cm&to=nayan.sarania.work@gmail.com" target="_blank">
             <button 
-              className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-border/20 text-text hover:bg-foreground/5 transition text-sm md:text-md cursor-pointer animate-fade-in animation-delay-500"
+              className="flex items-center gap-2 px-4 md:px-5 py-2.5 rounded-xl bg-foreground/10 hover:bg-foreground/15 border border-border/20 text-text transition text-xs md:text-[14px] cursor-pointer animate-fade-in animation-delay-500"
             >
-              <Send className="w-4 h-4 send-anim" />
+              <Send className="w-3 h-3 md:w-4 md:h-4 send-anim" />
               Send Mail
             </button>
           </a>

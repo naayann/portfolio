@@ -1,4 +1,4 @@
-import { SiJavascript, SiReact, SiTailwindcss, SiTypescript, SiSupabase, SiFigma, SiGit, SiGithub, SiNpm, SiVercel, SiNotion } from 'react-icons/si'
+import { SiJavascript, SiReact, SiTailwindcss, SiTypescript, SiSupabase, SiFigma, SiGit, SiGithub, SiNpm, SiVercel } from 'react-icons/si'
 
 const techStack = [
   { name: 'JavaScript', icon: SiJavascript },
@@ -11,14 +11,13 @@ const techStack = [
   { name: 'GitHub', icon: SiGithub },
   { name: 'NPM', icon: SiNpm },
   { name: 'Vercel', icon: SiVercel },
-  { name: 'Notion', icon: SiNotion },
 ]
 
 
 const Skills = () => {
   return (
     <>
-      <h1 className="mt-10 mb-5 text-xl font-bold text-text">
+      <h1 className="mt-10 mb-5 text-lg md:text-xl font-bold text-text">
         Skills & Technologies
       </h1>
 

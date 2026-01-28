@@ -26,7 +26,7 @@ const projects = [
 const Projects = () => {
   return (
     <>
-      <h1 className="mt-10 mb-6 text-xl font-bold text-text animate-fade-in animation-delay-800">
+      <h1 className="mt-10 mb-6 text-lg md:text-xl font-bold text-text animate-fade-in animation-delay-800">
         Projects
       </h1>
 
@@ -41,13 +41,13 @@ const Projects = () => {
               <img
                 src={project.img}
                 alt={project.title}
-                className="w-full h-44 object-cover grayscale group-hover:grayscale-0 transition duration-300"
+                className="w-full h-44 object-cover md:grayscale group-hover:grayscale-0 transition duration-300"
               />
             </div>
 
             {/* Header */}
             <div className="flex items-center justify-between mt-4">
-              <h2 className="font-semibold text-text">
+              <h2 className="font-semibold text-md text-text">
                 {project.title}
               </h2>
 
@@ -63,7 +63,7 @@ const Projects = () => {
             </div>
 
             {/* Description */}
-            <p className="mt-2 text-sm text-text/60 leading-relaxed">
+            <p className="mt-2 text-xs md:text-sm text-text/60 leading-relaxed">
               {project.desc}
             </p>
 
@@ -72,7 +72,7 @@ const Projects = () => {
               {project.stack.map((tech, iTech) => (
                 <span
                   key={iTech}
-                  className="rounded-full border border-border/15 px-3 py-1 text-xs text-text/70"
+                  className="rounded-full border border-border/15 px-3 py-1 text-[10px] md:text-xs text-text/70"
                 >
                   {tech}
                 </span>
@@ -84,10 +84,10 @@ const Projects = () => {
               <a
                 href={project.demo}
                 target="_blank"
-                className="flex items-center gap-1 text-text/60 group-hover:text-text duration-200 hover:underline cursor-not-allowed"
+                className="flex items-center gap-1 text-xs md:text-md md:text-text/60 group-hover:text-text duration-200 hover:underline cursor-not-allowed"
               >
                 View Project
-                <ArrowUpRight className="w-4 h-4 send-anim" />
+                <ArrowUpRight className="w-3.5 h-3.5 md:w-4 md:h-4 send-anim" />
               </a>
             </div>
           </div>
