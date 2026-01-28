@@ -32,7 +32,7 @@ function App() {
 
               <HomeFeed />
               <Experience />
-              <GithubGraph />
+              {/* <GithubGraph /> */}
               <Projects />
               <Skills />
               <SocialHandles />
