@@ -26,11 +26,11 @@ const projects = [
 const Projects = () => {
   return (
     <>
-      <h1 className="mt-10 mb-6 text-xl font-bold text-text">
+      <h1 className="mt-10 mb-6 text-xl font-bold text-text animate-fade-in animation-delay-800">
         Projects
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in animation-delay-900">
         {projects.map((project, i) => (
           <div
             key={i}
