@@ -34,7 +34,7 @@ const Projects = () => {
         {projects.map((project, i) => (
           <div
             key={i}
-            className="group rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 p-4 transition"
+            className="group rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 p-4 transition duration-300 hover:-translate-y-1 hover:scale-[1.01]"
           >
             {/* Image */}
             <div className="overflow-hidden rounded-xl">

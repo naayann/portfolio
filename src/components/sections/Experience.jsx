@@ -10,7 +10,7 @@ const Experience = () => {
         Experience
       </h1>
 
-      <div className="rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 transition animate-fade-in animation-delay-600">
+      <div className="group rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 transition-all duration-300 hover:border-border/15 animate-fade-in animation-delay-600">
         {/* Header */}
         <button
           onClick={() => setOpen(!open)}
@@ -34,7 +34,7 @@ const Experience = () => {
             </div>
 
             <ChevronDown
-              className={`w-5 h-5 text-text/60 transition-transform ${open ? 'rotate-180' : ''
+              className={`w-5 h-5 text-text/60 group-hover:text-text transition-all duration-300 ${open ? 'rotate-180' : ''
                 }`}
             />
           </div>

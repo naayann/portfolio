@@ -45,9 +45,9 @@ const Collections = () => {
 
 const Card = ({ icon, title, desc }) => (
   <a href="#">
-    <div className="flex items-center rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 p-4 transition cursor-not-allowed">
+    <div className="flex items-center rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 p-4 transition cursor-not-allowed hover:scale-[1.01]">
       <div className="flex items-center gap-4">
-        <div className="bg-icon p-3 rounded-md text-xl text-text">
+        <div className="bg-white/10 p-3 rounded-md text-xl text-text">
           {icon}
         </div>
         <div>
