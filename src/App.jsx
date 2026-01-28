@@ -25,7 +25,7 @@ function App() {
       {isLoading ?
         <LoadingScreen /> :
         <>
-          <div className="container w-125 md:w-200 mx-auto md:border-l md:border-r border-border/50 border-dashed p-4">
+          <div className="container w-full md:w-200 mx-auto md:border-l md:border-r border-border/50 border-dashed p-4">
             <div className='flex flex-col'>
               <SmoothFollower />
               <DevToast />

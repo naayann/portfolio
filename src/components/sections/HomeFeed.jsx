@@ -31,17 +31,10 @@ const HomeFeed = () => {
             className="w-28 h-28 rounded-2xl ring-1 ring-border/20 hover:ring-white/50 transition-all duration-200 p-1 z-50 bg-foreground/5 animate-fade-in animation-delay-100"
           />
 
-          <div className="relative group">
+          <div>
             <h1 className="text-3xl font-bold text-text cursor-default animate-fade-in animation-delay-200">
               Nayan Sarania
             </h1>
-
-            {/* Tooltip */}
-            <span
-              className="absolute left-67 -translate-x-1/2 top-1.5 bg-foreground/50 text-text-invert text-xs font-medium px-3 py-1 rounded-md opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300 whitespace-nowrap z-50"
-            >
-              Open to Work
-            </span>
 
             <p className="text-sm text-text/60 mt-1 animate-fade-in animation-delay-300">
               Frontend Developer • React Enthusiast
@@ -64,13 +57,17 @@ const HomeFeed = () => {
 
         {/* CTAs */}
         <div className="flex gap-3 mt-6">
-          <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-foreground text-text-invert font-medium hover:bg-foreground/90 transition-colors duration-200 text-sm md:text-md cursor-not-allowed animate-fade-in animation-delay-500">
+          <button 
+            className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-foreground text-text-invert font-medium hover:bg-foreground/90 transition-colors duration-200 text-sm md:text-md cursor-not-allowed animate-fade-in animation-delay-500"
+          >
             <Download className="w-4 h-4 download-anim" />
             Download CV
           </button>
 
           <a href="https://mail.google.com/mail/?view=cm&to=nayan.sarania.work@gmail.com" target="_blank">
-            <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-border/20 text-text hover:bg-foreground/5 transition text-sm md:text-md cursor-pointer animate-fade-in animation-delay-500">
+            <button 
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-border/20 text-text hover:bg-foreground/5 transition text-sm md:text-md cursor-pointer animate-fade-in animation-delay-500"
+            >
               <Send className="w-4 h-4 send-anim" />
               Send Mail
             </button>
