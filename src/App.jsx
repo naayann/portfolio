@@ -9,7 +9,7 @@ import Skills from './components/sections/Skills'
 import SocialHandles from './components/sections/SocialHandles'
 import Collections from './components/sections/Collections'
 import Footer from './components/sections/Footer'
-import GithubGraph from './components/sections/GithubGraph'
+import GithubStats from './components/sections/GithubStats'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
@@ -32,7 +32,7 @@ function App() {
 
               <HomeFeed />
               <Experience />
-              {/* <GithubGraph /> */}
+              <GithubStats />
               <Projects />
               <Skills />
               <SocialHandles />
