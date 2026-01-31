@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ChevronLeft } from 'lucide-react';
 import { Link } from 'react-router';
 
-const BlogsPage = () => {
+const CaseStudiesPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen text-text pb-20">
       {/* Back link – consistent with ProjectPage */}
@@ -21,7 +25,7 @@ const BlogsPage = () => {
         <div className="mb-10 animate-fade-in animation-delay-200">
           <div className="flex flex-wrap items-baseline gap-3">
             <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
-              Blogs
+              Case Study
             </h1>
             <span className="text-sm text-text/60 font-medium">
               Thoughts & Notes
@@ -55,4 +59,4 @@ const BlogsPage = () => {
   );
 };
 
-export default BlogsPage;
+export default CaseStudiesPage;
