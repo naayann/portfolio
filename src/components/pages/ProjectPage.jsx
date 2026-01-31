@@ -36,20 +36,20 @@ const ProjectPage = () => {
       <main className="pt-6 px-5 md:px-12 max-w-4xl mx-auto">
         <div className="mb-5 animate-fade-in animation-delay-100">
           <div className="flex flex-wrap items-baseline gap-3">
-            <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
+            <h1 className="text-xl md:text-3xl font-bold tracking-tight">
               {project.title}
             </h1>
-            <div className="flex items-center gap-2 text-sm text-text/60">
+            <div className="flex items-center gap-2 text-xs md:text-sm text-text/60">
               <span
                 className={`w-2 h-2 rounded-full ${
                   project.statusColor === 'green' ? 'bg-green-400' : 'bg-red-400'
                 }`}
               />
-              {project.status || 'Personal'}
+              {project.status}
             </div>
           </div>
 
-          <div className="mt-1.5 text-sm text-text/60">
+          <div className="mt-1.5 text-xs md:text-sm text-text/60">
             {project.role}
           </div>
         </div>
@@ -69,7 +69,7 @@ const ProjectPage = () => {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-border/15 bg-foreground/3 hover:bg-foreground/6 text-text/90 hover:text-text text-sm font-medium transition duration-200  cursor-not-allowed"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-border/15 bg-foreground/3 hover:bg-foreground/6 text-text/90 hover:text-text text-xs md:text-sm font-medium transition duration-200  cursor-not-allowed"
             >
               <Github className="w-3.5 h-3.5" />
               Source Code
@@ -81,7 +81,7 @@ const ProjectPage = () => {
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-border/15 bg-foreground/3 hover:bg-foreground/6 text-text/90 hover:text-text text-sm font-medium transition duration-200  cursor-not-allowed"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-border/15 bg-foreground/3 hover:bg-foreground/6 text-text/90 hover:text-text text-xs md:text-sm font-medium transition duration-200  cursor-not-allowed"
             >
               <Globe className="w-3.5 h-3.5" />
               Live Demo
@@ -91,7 +91,7 @@ const ProjectPage = () => {
 
         {/* Description */}
         <section className="mb-8 animate-fade-in animation-delay-500">
-          <p className="text-text/75 leading-relaxed text-[15px] sm:text-base whitespace-pre-line">
+          <p className="text-text/75 leading-relaxed text-xs md:text-[15px] whitespace-pre-line">
             {project.description}
           </p>
         </section>
@@ -99,7 +99,7 @@ const ProjectPage = () => {
         {/* Tech stack – same style as card */}
         {project.stack?.length > 0 && (
           <section className="mb-30 animate-fade-in animation-delay-600">
-            <h2 className="text-lg font-semibold mb-3">Stack</h2>
+            <h2 className="text-md md:text-lg font-semibold mb-3">Stack</h2>
             <div className="flex flex-wrap gap-2">
               {project.stack.map((tech, i) => (
                 <span

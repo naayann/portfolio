@@ -31,25 +31,25 @@ const CaseStudiesPage = () => {
       <main className="pt-10 px-5 sm:px-8 md:px-12 lg:px-16 max-w-4xl mx-auto">
         {/* Title area – matching Projects / Blogs / ProjectPage */}
         <div className="mb-12 text-center animate-fade-in animation-delay-100">
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
+          <h1 className="text-xl md:text-3xl font-bold tracking-tight">
             Case Studies
           </h1>
-          <p className="mt-3 text-text/60 text-[15px] sm:text-base">
+          <p className="mt-3 text-text/60 text-xs md:text-[15px]">
             Design decisions, trade-offs, and real-world outcomes.
           </p>
         </div>
 
-        <div className="group rounded-2xl border border-border/10 bg-foreground/3 p-8 md:p-10 text-center transition duration-300 hover:bg-foreground/5 animate-fade-in animation-delay-200">
+        <div className="group rounded-2xl border border-border/10 bg-foreground/3 p-6 md:p-10 text-center transition duration-300 hover:bg-foreground/5 animate-fade-in animation-delay-200">
           <div className="mb-6">
-            <h2 className="text-xl font-semibold text-text mb-4">
+            <h2 className="text-lg md:text-xl font-semibold text-text mb-4">
               No posts yet
             </h2>
-            <p className="text-text/70 leading-relaxed text-[15px] sm:text-base max-w-2xl mx-auto">
+            <p className="text-text/70 leading-relaxed text-xs md:text-[15px] max-w-2xl mx-auto">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo sed harum laborum eum nam dolore tenetur, dolorem voluptates quas, facilis rerum, porro incidunt ab. Molestiae sed rerum quisquam?
             </p>
           </div>
 
-          <p className="text-text/55 text-xs pt-4">
+          <p className="text-text/55 text-[10px] md:text-xs pt-4">
           For more updates, follow me on X {" "}
           <a
             href="https://x.com/intent/follow?screen_name=naayann01"
