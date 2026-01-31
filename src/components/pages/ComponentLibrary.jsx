@@ -204,13 +204,13 @@ export default Accordion`,
         </Link>
       </div>
 
-      <main className="pt-10 px-5 max-w-4xl mx-auto">
+      <main className="pt-10 px-3 md:px-5 max-w-4xl mx-auto">
         {/* Header – understated like other pages */}
         <div className="mb-12 text-center animate-fade-in animation-delay-200">
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
+          <h1 className="text-xl md:text-3xl font-bold tracking-tight">
             UI Components
           </h1>
-          <p className="mt-3 text-text/60 text-[15px] sm:text-base">
+          <p className="mt-3 text-text/60 text-xs md:text-[15px]">
             Reusable React components built for this portfolio.
           </p>
         </div>
@@ -222,13 +222,13 @@ export default Accordion`,
               className="group rounded-2xl border border-border/10 bg-foreground/3 transition duration-300 hover:bg-foreground/5 animate-fade-in"
               style={{ animationDelay: `${300 + i * 100}ms` }}
             >
-              <div className="p-6 md:p-8">
+              <div className="p-5 md:p-8">
                 <div className="flex items-start justify-between gap-4 mb-6">
                   <div>
-                    <h2 className="text-lg md:text-xl font-semibold text-text">
+                    <h2 className="text-md md:text-xl font-semibold text-text">
                       {comp.title}
                     </h2>
-                    <p className="mt-1 text-sm text-text/60">
+                    <p className="mt-1 text-xs md:text-sm text-text/60">
                       {comp.description}
                     </p>
                   </div>
@@ -238,7 +238,7 @@ export default Accordion`,
                 <div className="flex border-b border-border/10 mb-6">
                   <button
                     onClick={() => setActiveTab((prev) => ({ ...prev, [comp.id]: 'preview' }))}
-                    className={`pb-2.5 px-4 text-sm font-medium transition-colors ${(activeTab[comp.id] ?? 'preview') === 'preview'
+                    className={`pb-2.5 px-4 text-xs md:text-sm font-medium transition-colors ${(activeTab[comp.id] ?? 'preview') === 'preview'
                       ? 'text-text border-b-2 border-text'
                       : 'text-text/60 hover:text-text/90'
                       }`}
@@ -247,7 +247,7 @@ export default Accordion`,
                   </button>
                   <button
                     onClick={() => setActiveTab((prev) => ({ ...prev, [comp.id]: 'code' }))}
-                    className={`pb-2.5 px-4 text-sm font-medium transition-colors ${activeTab[comp.id] === 'code'
+                    className={`pb-2.5 px-4 text-xs md:text-sm font-medium transition-colors ${activeTab[comp.id] === 'code'
                       ? 'text-text border-b-2 border-text'
                       : 'text-text/60 hover:text-text/90'
                       }`}
@@ -292,13 +292,13 @@ export default Accordion`,
 
         {/* How to use section */}
         <div className="mt-12 mb-28 animate-fade-in animation-delay-300">
-          <h2 className="text-xl md:text-2xl font-semibold mb-5">How to use these components</h2>
+          <h2 className="text-[19px] md:text-2xl font-semibold mb-5">How to use these components</h2>
 
-          <p className="text-text/75 mb-6 leading-relaxed">
+          <p className="text-text/75 text-sm md:text-md mb-6 leading-relaxed">
             These are not published as an npm package — they are meant to be <strong>copied and pasted</strong> into your project (similar to shadcn/ui or magicui).
           </p>
 
-          <div className="space-y-8 text-sm md:text-base">
+          <div className="space-y-8 text-xs md:text-sm">
             {/* Step 1 */}
             <div>
               <h3 className="font-medium text-text mb-2.5">1. Prerequisites</h3>
@@ -317,7 +317,7 @@ export default Accordion`,
   rounded-lg border border-zinc-700/50
   bg-zinc-950
   shadow-inner shadow-black/60
-  p-5 font-mono text-sm text-emerald-300/90 leading-relaxed
+  p-5 font-mono text-xs md:text-sm text-emerald-300/90 leading-relaxed
 ">
   {`npm install lucide-react
 # or
@@ -339,7 +339,7 @@ pnpm add lucide-react`}</pre>
   rounded-lg border border-zinc-700/50
   bg-zinc-950
   shadow-inner shadow-black/60
-  p-5 font-mono text-sm text-emerald-300/90 leading-relaxed
+  p-5 font-mono text-xs md:text-sm text-emerald-300/90 leading-relaxed
 ">{`src/
   components/
     ui/
@@ -357,7 +357,7 @@ pnpm add lucide-react`}</pre>
   rounded-lg border border-zinc-700/50
   bg-zinc-950
   shadow-inner shadow-black/60
-  p-5 font-mono text-sm text-emerald-300/90 leading-relaxed
+  p-5 font-mono text-xs md:text-sm text-emerald-300/90 leading-relaxed
 ">{`import { Button } from '@/components/ui/Button'
 import { ChevronDown, Download } from 'lucide-react'
 
@@ -371,7 +371,7 @@ import { ChevronDown, Download } from 'lucide-react'
 
             {/* Optional notes */}
             <div className="pt-4 border-t border-border/10">
-              <p className="text-text/60 text-sm italic">
+              <p className="text-text/60 text-xs md:text-sm italic">
                 • Most components are unstyled / minimally styled — customize freely with Tailwind classes.<br />
                 • No external runtime dependencies except <code className="text-text/90">lucide-react</code>.<br />
                 • Animations (like fade-in, bounce) require your global CSS / tailwind.config.
