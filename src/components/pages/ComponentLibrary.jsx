@@ -1,6 +1,9 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import { Copy, Check, ChevronLeft, ChevronDown, Download } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
+import { FiArrowUpRight } from 'react-icons/fi'
+import { SiGithub, SiX } from 'react-icons/si'
 import { Link } from 'react-router'
 import Footer from '../sections/Footer'
 
@@ -32,36 +35,38 @@ const ComponentLibrary = () => {
       preview: (
         <button
           className="flex items-center gap-2 px-4 md:px-5 py-2.5 rounded-xl bg-foreground text-text-invert font-medium hover:bg-foreground/85 transition-colors duration-200 text-xs md:text-[14px]"
-        > 
+        >
           <Download className="w-3 h-3 md:w-4 md:h-4 download-anim" />
           Download CV
         </button>
       ),
-      code: `JSX:
-        const [open, setOpen] = useState(false)
+      code: `
+  import React, { useState } from 'react'
 
-          <button 
-            className="flex items-center gap-2 px-4 md:px-5 py-2.5 rounded-xl bg-foreground text-text-invert font-medium hover:bg-foreground/85 transition-colors duration-200 text-xs md:text-[14px]"
-          >
-            <Download className="w-3 h-3 md:w-4 md:h-4 download-anim" />
-            Download CV
-          </button>
+  const [open, setOpen] = useState(false)
+
+    <button 
+      className="flex items-center gap-2 px-4 md:px-5 py-2.5 rounded-xl bg-foreground text-text-invert font-medium hover:bg-foreground/85 transition-colors duration-200 text-xs md:text-[14px]"
+    >
+      <Download className="w-3 h-3 md:w-4 md:h-4 download-anim" />
+      Download CV
+    </button>
           
-Global CSS:
-          @keyframes downloadMove {
-            0%,
-            100% {
-              transform: translateY(-1px);
-            }
 
-            50% {
-              transform: translateY(0);
-            }
-          }
+   @keyframes downloadMove {
+     0%,
+     100% {
+       transform: translateY(-1px);
+     }
 
-          .download-anim {
-            animation: downloadMove 1.4s ease-in-out infinite;
-          }`,
+     50% {
+       transform: translateY(0);
+     }
+   }
+
+  .download-anim {
+    animation: downloadMove 1.4s ease-in-out infinite;
+  }`,
     },
     {
       id: 'accordion',
@@ -121,8 +126,10 @@ Global CSS:
           </div>
         </>
       ),
-      code: `JSX:
-const Accordion = () => {
+      code: `
+  import React, { useState } from 'react'
+  
+  const Accordion = () => {
   const [open, setOpen] = useState(false)
 
   return (
@@ -181,6 +188,160 @@ const Accordion = () => {
 }
 
 export default Accordion`,
+    },
+    {
+      id: 'Card',
+      title: 'Card',
+      description: 'Card container for projects.',
+      preview: (
+        <>
+          <div className="w-90">
+            <div
+              className="group rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 p-4 transition duration-300 hover:-translate-y-1 hover:scale-[1.01]"
+            >
+              {/* Image */}
+              <div className="overflow-hidden rounded-xl">
+                <img
+                  src="./comingsoon.jpg"
+                  className="w-full h-44 object-cover md:grayscale group-hover:grayscale-0 transition duration-300"
+                />
+              </div>
+
+              {/* Header */}
+              <div className="flex items-center justify-between mt-4">
+                <h2 className="font-semibold text-md text-text">
+                  Title
+                </h2>
+
+                <span className="flex items-center gap-2 text-xs text-text/60">
+                  <span
+                    className="w-2 h-2 rounded-full bg-green-400
+                                }"
+                  />
+                  Live
+                </span>
+              </div>
+
+              {/* Description */}
+              <p className="mt-2 text-xs md:text-sm text-text/60 leading-relaxed line-clamp-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos doloribus minus facere deserunt eaque vitae repellat, modi consectetur? Ea id maiores rem obcaecati suscipit placeat, distinctio quaerat quam totam?
+              </p>
+
+              {/* Stack */}
+              <div className="flex flex-wrap gap-2 mt-4">
+
+                <span
+                  className="rounded-full border border-border/15 px-3 py-1 text-[10px] md:text-xs text-text/70"
+                >
+                  JavaScript
+                </span>
+              </div>
+
+              {/* Links */}
+              <div className="flex gap-4 mt-5 text-sm">
+                <div
+                  className="flex items-center gap-1 text-xs md:text-md md:text-text/60 group-hover:text-text duration-200 hover:underline cursor-pointer"
+                >
+                  View Details
+                  <ArrowUpRight className="w-3.5 h-3.5 md:w-4 md:h-4 send-anim" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      ),
+      code: `
+  <div className="w-90 animate-fade-in animation-delay-700">
+    <div
+      className="group rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 p-4 transition duration-300 hover:-translate-y-1 hover:scale-[1.01]"
+    >
+      {/* Image */}
+      <div className="overflow-hidden rounded-xl">
+        <img
+          src="./comingsoon.jpg"
+          className="w-full h-44 object-cover md:grayscale group-hover:grayscale-0 transition duration-300"
+        />
+      </div>
+
+      {/* Header */}
+      <div className="flex items-center justify-between mt-4">
+        <h2 className="font-semibold text-md text-text">
+          Title
+        </h2>
+
+        <span className="flex items-center gap-2 text-xs text-text/60">
+          <span
+            className="w-2 h-2 rounded-full bg-green-400
+                        }"
+          />
+          Live
+        </span>
+      </div>
+
+      {/* Description */}
+      <p className="mt-2 text-xs md:text-sm text-text/60 leading-relaxed line-clamp-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dignissimos doloribus minus facere deserunt eaque vitae repellat, modi consectetur? Ea id maiores rem obcaecati suscipit placeat, distinctio quaerat quam totam?
+      </p>
+
+      {/* Stack */}
+      <div className="flex flex-wrap gap-2 mt-4">
+
+        <span
+          className="rounded-full border border-border/15 px-3 py-1 text-[10px] md:text-xs text-text/70"
+        >
+          JavaScript
+        </span>
+      </div>
+
+      {/* Links */}
+      <div className="flex gap-4 mt-5 text-sm">
+        <div
+          className="flex items-center gap-1 text-xs md:text-md md:text-text/60 group-hover:text-text duration-200 hover:underline cursor-pointer"
+        >
+          View Details
+          <ArrowUpRight className="w-3.5 h-3.5 md:w-4 md:h-4 send-anim" />
+        </div>
+      </div>
+    </div>
+  </div>`
+    },
+    {
+      id: 'Socials',
+      title: 'Socials',
+      description: 'Links for socials.',
+      preview: (
+        <>
+          <div className="group flex items-center justify-between w-80 rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 p-4 transition duration-300 hover:scale-[1.02] animate-fade-in animation-delay-900">
+            <div className='flex items-center gap-4'>
+              <div className='bg-foreground/10 p-3 rounded-md'>
+                <SiGithub className="text-md md:text-xl text-text" />
+              </div>
+              <div>
+                <h1 className='text-sm md:text-md'>Github</h1>
+                <p className="text-text/60 text-xs md:text-sm">@naayann</p>
+              </div>
+            </div>
+            <div>
+              <FiArrowUpRight className='text-md md:text-xl md:text-text/50 group-hover:text-text duration-300' />
+            </div>
+          </div>
+        </>
+      ),
+      code: `
+  <div className="group flex items-center justify-between rounded-2xl border border-border/10 bg-foreground/3 hover:bg-foreground/5 p-4 transition duration-300 hover:scale-[1.02] animate-fade-in animation-delay-900">
+      <div className='flex items-center gap-4'>
+        <div className='bg-foreground/10 p-3 rounded-md'>
+          <SiGithub className="text-md md:text-xl text-text" />
+        </div>
+        <div>
+          <h1 className='text-sm md:text-md'>Github</h1>
+          <p className="text-text/60 text-xs md:text-sm">@naayann</p>
+        </div>
+      </div>
+      <div>
+        <FiArrowUpRight className='text-md md:text-xl md:text-text/50 group-hover:text-text duration-300' />
+      </div>
+  </div>`
     },
   ]
 
@@ -319,7 +480,7 @@ export default Accordion`,
   shadow-inner shadow-black/60
   p-5 font-mono text-xs md:text-sm text-emerald-300/90 leading-relaxed
 ">
-  {`npm install lucide-react
+                  {`npm install lucide-react
 # or
 yarn add lucide-react
 # or
