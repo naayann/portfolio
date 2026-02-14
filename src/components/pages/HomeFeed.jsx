@@ -45,22 +45,21 @@ const HomeFeed = () => {
             </h1>
 
             <p className="text-[10px] md:text-sm text-text/60 mt-1 animate-fade-in animation-delay-200">
-              Frontend Developer • React Enthusiast
+              React Developer • Learning Full-Stack
             </p>
           </div>
         </div>
       </div>
 
       {/* About */}
-      <div className="mt-8 max-w-xl animate-fade-in animation-delay-300">
+      <div className="mt-8 max-w-2xl animate-fade-in animation-delay-300">
         <h2 className="text-md md:text-lg font-semibold text-text">
           About
         </h2>
 
         <p className="text-xs md:text-[16px] mt-3 text-text/70 leading-relaxed">
-          I’m a frontend developer based in India, focused on building
-          performance oriented React applications with clean UI and solid UX. <br />
-          Currently open to new opportunities.
+          I’m a Web Developer based in India, <br /> specializing in Frontend and expanding to Full-Stack.
+          Experienced in crafting clean, performant React applications with a strong focus on user experience, accessibility, and maintainable code.
         </p>
 
         {/* CTAs */}
