@@ -17,8 +17,7 @@ npm run dev
 ```
 
 ### Deployment
-The project is currently deployed on **Netlify** for development and preview purposes.
-<br> After production completion, it will be deployed using **Vercel**.
+The project is currently deployed on **Vercel**.
 
 ### Contact
 Email: nayan.sarania.work@gmail.com
