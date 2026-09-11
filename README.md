@@ -2,7 +2,7 @@
 
 This is my personal developer portfolio, designed to serves as a central place to showcase my skills, projects, and experience as a front-end developer.
 
-**Live Demo** [https://nayansarania.vercel.app](https://nayansarania.vercel.app/)
+**Live Demo** [tech.nayansarania.com](https://tech.nayansarania.com/)
 
 ### Tech Stack
 - React
