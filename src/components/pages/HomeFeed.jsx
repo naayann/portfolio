@@ -45,7 +45,7 @@ const HomeFeed = () => {
             </h1>
 
             <p className="text-[10px] md:text-sm text-text/60 mt-1 animate-fade-in animation-delay-200">
-              React Developer • Learning Full-Stack
+              React Developer
             </p>
           </div>
         </div>
@@ -57,22 +57,21 @@ const HomeFeed = () => {
           About
         </h2>
 
-        <p className="text-xs md:text-[16px] mt-3 text-text/70 leading-relaxed">
-          I’m a Web Developer based in India, <br /> specializing in Frontend and expanding to Full-Stack.
-          Experienced in crafting clean, performant React applications with a strong focus on user experience, accessibility, and maintainable code.
-        </p>
+        I’m a developer based in India who enjoys building clean and simple web experiences. Focused on frontend and growing into full-stack, with an emphasis on performant React apps and maintainable code.
 
         {/* CTAs */}
         <div className="flex gap-3 mt-6 animate-fade-in animation-delay-400">
-          <button 
-            className="flex items-center gap-2 px-4 md:px-5 py-2.5 rounded-xl bg-foreground text-text-invert font-medium hover:bg-foreground/85 transition-colors duration-200 text-xs md:text-[14px] cursor-not-allowed"
+          <a
+            href="/cv.pdf"
+            download="NayanSarania-CV.pdf"
+            className="flex items-center gap-2 px-4 md:px-5 py-2.5 rounded-xl bg-foreground text-text-invert font-medium hover:bg-foreground/85 transition-colors duration-200 text-xs md:text-[14px]"
           >
             <Download className="w-3 h-3 md:w-4 md:h-4 download-anim" />
             Download CV
-          </button>
+          </a>
 
           <a href="https://mail.google.com/mail/?view=cm&to=nayan.sarania.work@gmail.com" target="_blank">
-            <button 
+            <button
               className="flex items-center gap-2 px-4 md:px-5 py-2.5 rounded-xl bg-foreground/10 hover:bg-foreground/15 border border-border/20 text-text transition text-xs md:text-[14px] cursor-pointer"
             >
               <Send className="w-3 h-3 md:w-4 md:h-4 send-anim" />
