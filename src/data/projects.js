@@ -1,33 +1,30 @@
 
 export const projects = [
   {
-    title: "Weathy",
+    title: "Cirqle",
     role: "Personal Project • 2026",
-    desc: "Not a regular weather app, It's something special with exclusive features",
-    description: `Weathy is a weather application not only focused on clean design and performance, but also something else.
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo sed harum laborum eum nam dolore tenetur, dolorem voluptates quas, facilis rerum, porro incidunt ab. Molestiae sed rerum quisquam, placeat nihil porro?
-
-Particular attention was given to responsive layouts, subtle micro-interactions, and some exclusive features you have never seen before.`,
+    desc: "A lightweight, community-focused social media web application.",
+    description: `Cirqle is a community-focused social web application that allows users to discover and create communities, publish posts, and engage with content through likes and comments. The application was built with React and TypeScript, with Supabase handling backend services and data persistence. It uses TanStack Query for efficient server-state management and Tailwind CSS for a responsive user interface.`,
     img: "/comingsoon.jpg",
     stack: ["React", "TypeScript", "TanStack Query"],
-    github: "https://github.com/yourusername/weathy",
-    live: "https://weathy.vercel.app",
-    status: "Building",
-    statusColor: "green",
+    github: "https://github.com/naayann/cirqle",
+    live: "#",
+    status: "Live",
+    statusColor: "red",
   },
   {
-    title: "Coming soon",
-    role: "Coming Soon • 2026",
-    desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-    description: `This project is currently in the planning phase. Stay tuned for more updates.
+    title: "Rangapani",
+    role: "Internship • 2025",
+    desc: "Portfolio of Rangapani Village. Built for preserving culture and maintaining digital presence.",
+    description: `Rangapani Website is a portfolio-style web project developed for the village of Rangapani.
+It aims to showcase the village’s beauty, culture, and essential services through a structured, user-friendly website.
 
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo sed harum laborum eum nam dolore tenetur, dolorem voluptates quas, facilis rerum, porro incidunt ab. Molestiae sed rerum quisquam, placeat nihil porro?`,
-    img: "/comingsoon.jpg",
-    stack: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/yourusername/nope",
+Unlike a social platform, the site is designed for one-way content delivery — only an authorized admin can manage and update the content, while visitors can explore images, services, and contact details.`,
+    img: "/preview.png",
+    stack: ["JavaScript", "Supabase", "Web3forms", ],
+    github: "https://github.com/naayann/rangapani",
     live: "#",
-    status: "Planning",
+    status: "Live",
     statusColor: "red",
   },
 ];

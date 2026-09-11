@@ -69,7 +69,7 @@ const ProjectPage = () => {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-border/15 bg-foreground/3 hover:bg-foreground/6 text-text/90 hover:text-text text-xs md:text-sm font-medium transition duration-200  cursor-not-allowed"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-xl border border-border/15 bg-foreground/3 hover:bg-foreground/6 text-text/90 hover:text-text text-xs md:text-sm font-medium transition duration-200"
             >
               <Github className="w-3.5 h-3.5" />
               Source Code
