@@ -10,7 +10,7 @@ Track your progress with multipliers, get gentle daily reminders, and stay consi
     img: "/appss.png",
     stack: ["Java", "XML", "Room DB"],
     github: "https://github.com/naayann/floww",
-    live: "floww-productivity.netlify.app",
+    live: "https://floww-productivity.netlify.app/",
     status: "Live",
     statusColor: "green",
   },
