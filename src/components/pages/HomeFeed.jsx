@@ -57,7 +57,7 @@ const HomeFeed = () => {
           About
         </h2>
 
-        I’m a developer based in India who enjoys building clean and simple web experiences. Focused on frontend and growing into full-stack, with an emphasis on performant React apps and maintainable code.
+        I’m a developer based in India who enjoys building clean web and app experiences. Focused on making things that feel good to use and code that’s easy to maintain.
 
         {/* CTAs */}
         <div className="flex gap-3 mt-6 animate-fade-in animation-delay-400">
@@ -70,13 +70,12 @@ const HomeFeed = () => {
             Download CV
           </a>
 
-          <a href="https://mail.google.com/mail/?view=cm&to=nayan.sarania.work@gmail.com" target="_blank">
-            <button
-              className="flex items-center gap-2 px-4 md:px-5 py-2.5 rounded-xl bg-foreground/10 hover:bg-foreground/15 border border-border/20 text-text transition text-xs md:text-[14px] cursor-pointer"
-            >
-              <Send className="w-3 h-3 md:w-4 md:h-4 send-anim" />
-              Send Mail
-            </button>
+          <a
+            href="mailto:nayan.sarania.work@gmail.com"
+            className="flex items-center gap-2 px-4 md:px-5 py-2.5 rounded-xl bg-foreground/10 hover:bg-foreground/15 border border-border/20 text-text transition text-xs md:text-[14px] cursor-pointer"
+          >
+            <Send className="w-3 h-3 md:w-4 md:h-4 send-anim" />
+            Send Mail
           </a>
         </div>
       </div>
