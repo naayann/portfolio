@@ -1,4 +1,10 @@
-import { SiJavascript, SiReact, SiTailwindcss, SiTypescript, SiSupabase, SiFigma, SiGit, SiGithub, SiNpm, SiVercel, SiNextdotjs, SiMysql, SiPostgresql, SiPython, SiC, } from 'react-icons/si'
+import { 
+  SiJavascript, SiReact, SiTailwindcss, SiTypescript, SiSupabase, 
+  SiFigma, SiGit, SiGithub, SiNpm, SiVercel, SiNextdotjs, 
+  SiMysql, SiPostgresql, SiPython, SiC 
+} from 'react-icons/si'
+
+import { DiJava } from 'react-icons/di'
 
 const techStack = [
   { name: 'JavaScript', icon: SiJavascript },
@@ -12,6 +18,8 @@ const techStack = [
   { name: 'Git', icon: SiGit },
   { name: 'GitHub', icon: SiGithub },
   { name: 'Python', icon: SiPython },
+  { name: 'Java', icon: DiJava },
+  { name: 'Figma', icon: SiFigma },
 ]
 
 

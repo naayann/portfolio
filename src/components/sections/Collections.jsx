@@ -11,7 +11,7 @@ const Collections = () => {
   return (
     <>
       <h1 className="mt-10 mb-6 text-lg md:text-xl font-bold text-text animate-fade-in animation-delay-1000">
-        Component Library
+        Others
       </h1>
 
       <section className="flex flex-col gap-3 animate-fade-in animation-delay-1000">
@@ -24,29 +24,10 @@ const Collections = () => {
         />
 
         <Card
-          icon={<FiLayers />}
-          title="Concept Works"
-          desc="Early-stage UI ideas and interaction explorations."
-          link="/conceptwork"
-        />
-
-      </section>
-
-      <section className="flex flex-col gap-3 animate-fade-in animation-delay-1000">
-        <h1 className="mt-10 mb-4 text-lg md:text-xl font-bold text-text">Insights</h1>
-
-        <Card
           icon={<FiEdit3 />}
           title="Blogs"
           desc="Thoughts on frontend, design, and things I’m learning."
           link="/blogs"
-        />
-
-        <Card
-          icon={<FiBookOpen />}
-          title="Case Studies"
-          desc="Design decisions, trade-offs, and real-world outcomes."
-          link="/casestudy"
         />
 
       </section>
