@@ -45,7 +45,7 @@ const HomeFeed = () => {
             </h1>
 
             <p className="text-[10px] md:text-sm text-text/60 mt-1 animate-fade-in animation-delay-200">
-              React Developer
+              Remote Developer
             </p>
           </div>
         </div>

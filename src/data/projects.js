@@ -3,9 +3,9 @@ export const projects = [
     {
     title: "Floww",
     role: "Personal Project • 2026",
-    desc: "A swipe-based daily goals android app designed for flow of life.",
-    description: `Floww is a clean, swipe-based daily goals app.  
-Set up to 8 goals with emoji & colors, then swipe right to complete or left to skip.  
+    desc: "A swipe-based daily goals android productivity app designed for flow of life.",
+    description: `Floww is a clean, swipe-based daily goals android app.  
+Set goals with emoji & colors, then swipe right to complete or left to skip.  
 Track your progress with multipliers, get gentle daily reminders, and stay consistent — all fully offline.`,
     img: "/appss.png",
     stack: ["Java", "XML", "Room DB"],
