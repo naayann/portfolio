@@ -7,7 +7,7 @@ export const projects = [
     description: `Floww is a clean, swipe-based daily goals android app.  
 Set goals with emoji & colors, then swipe right to complete or left to skip.  
 Track your progress with multipliers, get gentle daily reminders, and stay consistent — all fully offline.`,
-    img: "/appss.png",
+    img: "/floww.png",
     stack: ["Java", "XML", "Room DB"],
     github: "https://github.com/naayann/floww",
     live: "https://floww-productivity.netlify.app/",
